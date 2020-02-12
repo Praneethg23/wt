@@ -1,0 +1,15 @@
+table, th, td {
+            border: 1px solid yellow;
+            background-color: pink;
+                  padding: 10px;
+                 
+                    border-spacing: 10px;
+                    margin-left:30%;
+                    margin-right:30%;
+         }
+            table{
+                          width:40%;
+            }
+            h1{
+                text-align: center;
+            }
