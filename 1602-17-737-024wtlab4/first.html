@@ -1,0 +1,54 @@
+<!Doctype html>
+<html><head>
+
+<title>Color Changer</title>
+<script>
+var colours = {
+  "Light_Blue":"lightblue",
+  "Light_Yellow":"lightyellow",
+  "Light_Green":"lightgreen"
+}
+window.onload=function() {
+  var radio = document.getElementsByName("bgcRbtns");
+  for (var i=0;i<radio.length;i++) {
+    radio[i].onclick=function() {
+      document.body.style.backgroundColor=colours[this.value];
+        document.getElementById("colorText").innerHTML=colours[this.value];
+           var x = document.getElementsByTagName("input");
+        document.getElementById("radioCount").innerHTML=x.length;
+    }
+  }
+}
+</script>
+    </head>
+<body>
+
+<form>
+
+<p>Praneeth Gubba<br/>
+    1602-17-737-024<br/>
+    Choose one colour :</p>
+
+<pre>
+
+<input type="radio" name="bgcRbtns" class="radioColor"
+value="Light_Blue">Light Blue
+
+<input type="radio" name="bgcRbtns" checked class="radioColor"
+value="Light_Yellow">Light Yellow
+<br><input
+type="radio" name="bgcRbtns" class="radioColor"
+value="Light_Green">Light Green
+
+</pre>
+
+You have chosen: <span id="colorText"></span>
+
+<br>
+
+Count of radio buttons is : <span id="radioCount"></span>
+
+</form>
+
+</body>
+</html>
