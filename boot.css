@@ -1,0 +1,16 @@
+.container-fluid{
+	background-color: #1D94DA;
+}
+#img{
+	width: 6%;
+}
+.text,.ml-0{
+	color:blue;
+	/*text-align: center;*/
+}
+m{
+    padding-left: 350px;
+}
+#re{
+    background-color: limegreen;
+}
